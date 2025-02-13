@@ -12,9 +12,7 @@ for (let index = 0; index < partyList.length; index++) {
     const myPartyList = partyList[index];
     //console.log(myPartyList);
 
-    if (myPartyList === emailUser) {
+    if (emailUser === myPartyList) {
         console.log(`Your email:${emailUser} is in the list`);
-    } else {
-        console.log(`Your email:${emailUser} isn't in the list`);
     }
-}
+} 
