@@ -1,7 +1,5 @@
-/* 📌 Mail
-Crea una lista di email di invitati ad una festa.
-Chiedi all’utente la sua email, controlla che sia nella lista di chi può accedere,
-stampa un messaggio appropriato sull’esito del controllo. */
+/* 👉 Bonus:
+Dopo aver svolto l'esercizio con il for  fai una cartella bonus e svolgilo anche anche usando un metodo delle array tipo includes */
 
 const partyList = ["marco@gmail.com", "nicola@gmail.com", "lucia@gmail.com", "fabrizio@gmail.com"]
 //console.log(partyList);
@@ -12,12 +10,7 @@ for (let index = 0; index < partyList.length; index++) {
     const myPartyList = partyList[index];
     //console.log(myPartyList);
 
-    if (emailUser === myPartyList) {
+    if (myPartyList.includes(emailUser)) {
         alert(`Your email:${emailUser} is in the list`); 
-    } 
-    
-    /* else if (emailUser !== myPartyList) {
-        alert(`Your email:${emailUser} is not in the list`);
-        break
-    } */
-} 
+    }
+}
